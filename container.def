@@ -1,0 +1,19 @@
+Bootstrap: docker
+From: continuumio/anaconda3
+
+%environment
+    export PROJ_ROOT="/mnt/simulations"
+    export PYTHONPATH=$PROJ_ROOT
+
+%post
+
+    conda update conda
+    conda update --all
+
+    # conda env update --name base --file /opt/scripts/environment.yml
+
+%runscript
+
+    cd ${PROJ_ROOT} || exit
+
+    python "$@"
