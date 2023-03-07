@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - Navneet Agrawal
+  - Renato Cavalcante
+  - Masahiro Yukawa
+  - Slawomir Stanczak
+title: "Distributed Convex Optimization ``Over-the-Air'' in Time-Varying Environments."
+version: 1.0.1
+doi: 10.5281/zenodo.7705399
+date-released: 20212-11-01
